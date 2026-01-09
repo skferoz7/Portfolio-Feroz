@@ -1,41 +1,111 @@
 {% extends 'layout.html' %}
 {% block body %}
-<h2>About Me</h2>
-<p>B.Tech in Computer Science. Building web apps with Flask and small AI projects.
-  I am a dedicated CSE graduate with strong interest in web development and backend programming. I have experience working with Python, Flask, HTML, CSS, JavaScript, SQL, and AI tools. I enjoy learning new technologies and building simple, clean, and functional projects. I am looking for an opportunity in an IT company where I can apply my skills, grow professionally, and contribute to real-world applications.
-</p>
-<ul>
-  <li>Location: Hyderabad, Telangana</li>
-  <li>Phone - 7569439910</li>
-  <li>Email - ferozzz0655@gmail.com</li>
-  <li>Linkedin Profile - <a href="https://www.linkedin.com/in/feroz-shaik-9b228a25b/">Click</a></li>
-</ul>
-<h2>Internship</h2>
-<ul>
-  <li>Company: Purple Technologies, Vijayawada</li>
-  <li>Duration: 4 Months</li>
-  <li>Role: AI Intern</li>
-</ul>
-<p>During my internship at Purple Technologies, I worked on real-time Artificial Intelligence and Machine Learning concepts, gaining hands-on experience in building intelligent systems and understanding how AI is applied in real-world applications. I collaborated with the development team and learned how to integrate AI models with web applications.
-</p>
-<h6>Key Responsibilities:</h6>
-<ul>
-  <li>Developed Python-based scripts for data processing and model training.</li>
-  <li>Worked with popular ML libraries such as NumPy, Pandas, Scikit-Learn.</li>
-  <li>Built and tested small AI models for predictive analysis and pattern recognition.</li>
-  <li>Assisted in designing APIs using Flask for integrating AI functionalities with web apps.</li>
-  <li>Analyzed datasets and performed preprocessing, feature extraction, and visualization.</li>
-  <li>Participated in code reviews, debugging, and performance optimization.</li>
-  <li>Collaborated with team members to understand real-world AI problem statements.</li>
-</ul>
-<h2>Certifications</h2>
-<ul>
-  <li>AWS Virtual Internship – AICTE</li>
-  <li>Android Developer Virtual Internship – AICTE</li>
-  <li>C for Everyone – Coursera</li>
-  <li>CS50 (Introduction to Computer Science) – Harvard University</li>
-  <li>Crash Course On Python - Coursera</li>
-</ul>
+
+<div class="about-section">
+
+  <h2 class="mb-5 text-center">About Me</h2>
+
+  <div class="row">
+
+    <!-- Profile Summary -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Profile Summary</h5>
+          <p class="card-text">
+            I am a B.Tech Computer Science graduate with a strong interest in web development
+            and backend programming. I build web applications using Flask and work on small
+            AI-based projects.
+          </p>
+          <p class="card-text">
+            I have hands-on experience with Python, Flask, HTML, CSS, JavaScript, SQL,
+            and AI tools. I enjoy learning new technologies and building clean, functional
+            applications. I am looking for an opportunity where I can grow professionally
+            and contribute to real-world solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Personal Information -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Personal Information</h5>
+          <ul class="info-list">
+            <li><strong>Location:</strong> Hyderabad, Telangana</li>
+            <li><strong>Phone:</strong> 7569439910</li>
+            <li><strong>Email:</strong> ferozzz0655@gmail.com</li>
+            <li>
+              <strong>LinkedIn:</strong>
+              <a href="https://www.linkedin.com/in/feroz-shaik-9b228a25b/" target="_blank">
+                View Profile
+              </a>
+            </li>
+             <li>
+              <strong>GitHub:</strong>
+              <a href="https://github.com/skferoz7" target="_blank">
+                View Profile
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Internship -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Internship</h5>
+          <p class="card-text mb-2">
+            <strong>Company:</strong> Purple Technologies, Vijayawada<br>
+            <strong>Duration:</strong> 4 Months<br>
+            <strong>Role:</strong> AI Intern
+          </p>
+          <p class="card-text">
+            During my internship, I worked on real-time Artificial Intelligence and
+            Machine Learning concepts, built intelligent systems, and integrated AI models
+            with web applications using Flask.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Responsibilities -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Key Responsibilities</h5>
+          <ul>
+            <li>Developed Python scripts for data processing</li>
+            <li>Worked with NumPy, Pandas, and Scikit-Learn</li>
+            <li>Built and tested AI models</li>
+            <li>Designed Flask APIs for AI integration</li>
+            <li>Performed data preprocessing and analysis</li>
+            <li>Debugging and performance optimization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="col-12 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Certifications</h5>
+          <ul class="cert-list">
+            <li>AWS Virtual Internship – AICTE</li>
+            <li>Android Developer Virtual Internship – AICTE</li>
+            <li>C for Everyone – Coursera</li>
+            <li>CS50 (Introduction to Computer Science) – Harvard University</li>
+            <li>Crash Course on Python – Coursera</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 {% endblock %}
-
-

@@ -1,40 +1,77 @@
 {% extends 'layout.html' %}
 {% block body %}
-<h2>Projects</h2>
-<div class="row">
-  <div class="col-md-6">
-    <div class="card mb-3">
-      <div class="card-body">
-        <h5 class="card-title">Automated Public Lighting System (IoT)</h5>
-        <p class="card-text">The Automated Public Lighting System is an IoT-based smart street-lighting solution designed to minimize energy consumption and reduce manual intervention. The system uses LDR (Light Dependent Resistor) sensors to detect ambient light levels and automatically turn street lights ON during low-light conditions (night/evening) and OFF during daylight.
-        </p>
-        <h6>Key Features:</h6>
-        <ul>
-          <li>Automatic Light Control: Lights turn ON/OFF based on real-time light intensity.</li>
-          <li>Energy Efficiency: Reduces power wastage by eliminating manual operation.</li>
-          <li>Low Maintenance: Works autonomously without human supervision.</li>
-          <li>Scalable Design: Suitable for highways, campuses, communities, and smart cities.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="card mb-3">
-      <div class="card-body">
-        <h5 class="card-title">Student Task Manager</h5>
-        <p class="card-text">The Student Task Manager is a web-based application designed to help students organize and manage their daily academic tasks efficiently. It allows users to add, track, update, and complete tasks with a simple and clean user interface. The system helps students improve productivity by keeping all tasks in one place with real-time status updates.</p>
-        <h6>Key Features:</h6>
-        <ul>
-          <li>Task Creation: Add new tasks with title, description, and due date.</li>
-          <li>Task Status Tracking: Mark tasks as Pending, In Progress, or Completed.</li>
-          <li>Edit / Delete: Update task details or remove them anytime.</li>
-          <li>Responsive UI: Clean, simple design optimized for mobile and desktop.</li>
-          <li>User Authentication: Login/Signup system to secure user tasks.</li>
-          <li>Dark/Light Mode: Better reading and smooth user experience.</li>
 
-        </ul>
+<div class="projects-section">
+
+  <h2 class="mb-5 text-center">Projects</h2>
+
+  <div class="row">
+
+    <!-- Project 1 -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 project-card">
+        <div class="card-body">
+          <h5 class="card-title">Automated Public Lighting System (IoT)</h5>
+          <p class="card-text">
+            The Automated Public Lighting System is an IoT-based smart street-lighting
+            solution designed to minimize energy consumption and reduce manual intervention.
+            The system uses LDR sensors to automatically control street lights based on
+            ambient light.
+          </p>
+          <h6 class="fw-semibold mt-3">Key Features</h6>
+          <ul>
+            <li>Automatic light control using LDR sensors</li>
+            <li>Energy-efficient and cost-effective</li>
+            <li>Low maintenance and autonomous operation</li>
+            <li>Scalable for smart city applications</li>
+          </ul>
+        </div>
       </div>
     </div>
+
+    <!-- Project 2 -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 project-card">
+        <div class="card-body">
+          <h5 class="card-title">Student Task Manager</h5>
+          <p class="card-text">
+            A web-based application that helps students manage academic tasks efficiently
+            with real-time task status updates and a clean user interface.
+          </p>
+          <h6 class="fw-semibold mt-3">Key Features</h6>
+          <ul>
+            <li>Task creation with due dates</li>
+            <li>Status tracking (Pending / In Progress / Completed)</li>
+            <li>Edit and delete tasks</li>
+            <li>User authentication and theme support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 project-card">
+        <div class="card-body">
+          <h5 class="card-title">Expense Tracker</h5>
+          <p class="card-text">
+            The Expense Tracker is a web-based application that helps users track daily
+            income and expenses, analyze spending habits, and manage finances effectively.
+          </p>
+          <h6 class="fw-semibold mt-3">Key Features</h6>
+          <ul>
+            <li>Add income and expense records</li>
+            <li>Category-wise expense tracking</li>
+            <li>Real-time balance calculation</li>
+            <li>Edit and delete transactions</li>
+            <li>Monthly expense summary</li>
+            <li>Secure user authentication</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
+
 {% endblock %}

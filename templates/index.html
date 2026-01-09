@@ -1,8 +1,44 @@
 {% extends 'layout.html' %}
 {% block body %}
-<div class="text-center hero">
-    <h1>Hello, I'm <span class="accent">Shaik Feroz</span></h1>
-    <p class="lead">Software Developer • Python • Flask • HTML/CSS/JS • SQL</p>
-    <a class="btn btn-primary" href="/projects">View Projects</a>
+
+<div class="row align-items-center hero-section">
+
+  <!-- Left Content -->
+  <div class="col-md-7">
+    <h1 class="hero-title">
+      Hi, I’m <span class="accent">Shaik Feroz</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      Computer Science Graduate | Python & Flask Developer
+    </p>
+
+    <p class="hero-text">
+      I build clean, scalable web applications using Python, Flask, SQL, and modern
+      frontend technologies. I am passionate about backend development, problem solving,
+      and creating real-world software solutions.
+    </p>
+
+    <div class="mt-4">
+      <a href="/projects" class="btn btn-primary me-3">View Projects</a>
+      <a href="/about" class="btn btn-outline-primary">About Me</a>
+    </div>
+  </div>
+
+  <!-- Right Content -->
+  <div class="col-md-5 text-center">
+    <div class="hero-card">
+      <h5 class="fw-semibold mb-3">Core Skills</h5>
+      <ul class="list-unstyled mb-0">
+        <li>✔ Python & Flask</li>
+        <li>✔ HTML, CSS, JavaScript</li>
+        <li>✔ SQL & Database Design</li>
+        <li>✔ REST APIs</li>
+        <li>✔ Basic AI / ML Concepts</li>
+      </ul>
+    </div>
+  </div>
+
 </div>
+
 {% endblock %}
