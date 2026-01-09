@@ -1,22 +1,73 @@
 {% extends 'layout.html' %}
 {% block body %}
-<h2>Contact</h2>
-{% if sent %}
-  <div class="alert alert-success">Thanks, {{ name }} — your message was received (demo).</div>
-{% endif %}
-<form method="post">
-  <div class="mb-3">
-    <label class="form-label">Name</label>
-    <input name="name" class="form-control" required>
+
+<div class="contact-section">
+
+  <h2 class="mb-5 text-center">Contact Me</h2>
+
+  <div class="row justify-content-center">
+
+    <div class="col-md-8 col-lg-6">
+
+      {% if sent %}
+        <div class="alert alert-success">
+          Thank you, <strong>{{ name }}</strong>. Your message has been received.
+        </div>
+      {% endif %}
+
+      <div class="card">
+        <div class="card-body">
+
+          <p class="text-muted mb-4">
+            Feel free to reach out for opportunities, collaborations, or any professional discussion.
+          </p>
+
+          <form method="post">
+
+            <div class="mb-3">
+              <label class="form-label">Full Name</label>
+              <input
+                name="name"
+                class="form-control"
+                placeholder="Enter your name"
+                required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Email Address</label>
+              <input
+                name="email"
+                type="email"
+                class="form-control"
+                placeholder="Enter your email"
+                required>
+            </div>
+
+            <div class="mb-4">
+              <label class="form-label">Message</label>
+              <textarea
+                name="message"
+                class="form-control"
+                rows="4"
+                placeholder="Write your message here"
+                required></textarea>
+            </div>
+
+            <div class="text-end">
+              <button type="submit" class="btn btn-primary px-4">
+                Send Message
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+
   </div>
-  <div class="mb-3">
-    <label class="form-label">Email</label>
-    <input name="email" type="email" class="form-control" required>
-  </div>
-  <div class="mb-3">
-    <label class="form-label">Message</label>
-    <textarea name="message" class="form-control" rows="4" required></textarea>
-  </div>
-  <button class="btn btn-primary">Send</button>
-</form>
+
+</div>
+
 {% endblock %}
