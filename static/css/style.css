@@ -290,4 +290,15 @@ body.dark-mode .btn-outline-primary {
 .navbar-brand{
   text-decoration: none !important;
 }
+.link {
+  color: #000000;
+  text-decoration: none;
+}
+body.dark-mode .link {
+  color: #ffffff;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
 
